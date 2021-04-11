@@ -1,0 +1,22 @@
+{
+  "name": "First DataBase Web Application",
+  "short_name": "Web Data",
+  "background_color": "#FFFFFF",
+  "display": "minimal-ui",
+  "start_url": "/?feature\u003dytca",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://trusaic.com/wp-content/uploads/2018/07/webapp-icon-1-04.png",
+      "sizes": "900x900",
+      "type": "image/png"
+    }
+    
+  ],
+  "gcm_sender_id": "402845223712",
+  "gcm_user_visible_only": true,
+
+  "related_applications": [
+  ]
+}
+
