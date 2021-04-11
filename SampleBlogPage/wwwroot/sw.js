@@ -1,8 +1,8 @@
 ﻿
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
+const CACHE_NAME = 'my-site-cache-v1';
+let urlsToCache = [
     '/',
-  
+    '/css/site.css'
 ];
 
 self.addEventListener('install', function (event) {
