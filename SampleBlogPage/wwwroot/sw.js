@@ -1,5 +1,5 @@
 ﻿
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'firstCache';
 let urlsToCache = [
     '/',
     '/css/site.css'
@@ -29,4 +29,5 @@ self.addEventListener('fetch', function (event) {
             )
     );
 });
+
 
