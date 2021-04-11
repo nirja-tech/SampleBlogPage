@@ -1,0 +1,49 @@
+﻿@page
+@model SampleBlogPage.Pages.Blog.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>BlogPage</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BlogPage.Title" class="control-label"></label>
+                <input asp-for="BlogPage.Title" class="form-control" />
+                <span asp-validation-for="BlogPage.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BlogPage.Content" class="control-label"></label>
+                <input asp-for="BlogPage.Content" class="form-control" />
+                <span asp-validation-for="BlogPage.Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BlogPage.NewAuthor" class="control-label"></label>
+                <input asp-for="BlogPage.NewAuthor" class="form-control" />
+                <span asp-validation-for="BlogPage.NewAuthor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BlogPage.PublishDate" class="control-label"></label>
+                <input asp-for="BlogPage.PublishDate" class="form-control" />
+                <span asp-validation-for="BlogPage.PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
